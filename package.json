@@ -1,0 +1,32 @@
+{
+  "name": "horde-shooter-electron",
+  "version": "1.0.0",
+  "description": "Shooter 3D de hordas empaquetado con Electron.",
+  "main": "main.js",
+  "author": "You",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.example.hordeshooter",
+    "productName": "HordeShooter",
+    "files": [
+      "main.js",
+      "public/**/*"
+    ],
+    "directories": {
+      "buildResources": "build"
+    },
+    "win": {
+      "target": "nsis",
+      "artifactName": "HordeShooter-${version}-win.exe"
+    }
+  }
+}
