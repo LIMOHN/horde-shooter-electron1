@@ -17,6 +17,7 @@
   "build": {
     "appId": "com.example.hordeshooter",
     "productName": "HordeShooter",
+    "publish": "never",
     "files": [
       "main.js",
       "public/**/*"
